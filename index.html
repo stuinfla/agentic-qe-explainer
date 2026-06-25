@@ -11,6 +11,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Learning and using Agentic QE Fleet" />
   <meta property="og:description" content="A plain-language walkthrough of the Agentic QE Fleet — 60 AI-powered agents that generate tests, find coverage gaps, detect flaky tests, and learn your codebase patterns." />
+  <meta property="og:image" content="assets/img/g6.png" />
+  <meta property="og:image:width" content="1536" />
+  <meta property="og:image:height" content="1024" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="assets/img/g6.png" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -73,7 +78,18 @@
           </div>
           <a class="cta" href="https://github.com/proffesor-for-testing/agentic-qe" target="_blank" rel="noopener">View on GitHub &rarr;</a>
         </div>
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual">
+          <!-- HERO IMAGE: Fleet at a glance -->
+          <figure class="hero-figure">
+            <img
+              src="assets/img/g1.png"
+              width="1536"
+              height="1024"
+              alt="A warm, glowing command hub surrounded by 13 orbiting agent nodes — the Agentic QE Fleet at a glance: one Queen Coordinator, 60 agents, 13 domains."
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
           <!-- HERO DIAGRAM: Fleet at a glance -->
           <figure class="hero-figure">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" width="520" height="400" style="width:100%;height:auto;font-family:'IBM Plex Sans',sans-serif;">
@@ -197,6 +213,13 @@
             <span class="chev" aria-hidden="true">&rsaquo;</span>
           </summary>
           <div class="body">
+            <!-- IMAGE: Before vs After -->
+            <figure class="figure">
+              <img src="assets/img/g2.png" width="1536" height="1024"
+                   alt="Before: chaos of broken tests, red X marks, coverage gaps. After: organized green checkmarks, golden shield reading 96 percent, clean and confident."
+                   loading="lazy" />
+              <figcaption>Before Agentic QE: manual testing can't keep up. After: 60 AI agents auto-generate, analyze, and gate quality across the full surface.</figcaption>
+            </figure>
             <!-- VISUAL: Before vs After -->
             <figure class="figure diagram">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" role="img" style="width:100%;height:auto;font-family:'IBM Plex Sans',sans-serif;">
@@ -531,6 +554,13 @@
               </tbody>
             </table>
 
+            <!-- IMAGE: Model routing -->
+            <figure class="figure">
+              <img src="assets/img/g3.png" width="1536" height="1024"
+                   alt="Three tiers of intelligent cost routing: a small green lane for simple tasks (fast and cheap), a medium amber lane for moderate tasks, and a large copper lane for critical reasoning — a sorting funnel directs each task to the right tier."
+                   loading="lazy" />
+              <figcaption>TinyDancer sorts tasks by complexity and routes them to the cheapest model that can handle them — from free local models to full Opus reasoning.</figcaption>
+            </figure>
             <!-- VISUAL: Model routing (TinyDancer) -->
             <figure class="figure diagram">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" style="width:100%;height:auto;font-family:'IBM Plex Sans',sans-serif;">
@@ -598,6 +628,13 @@
             <span class="chev" aria-hidden="true">&rsaquo;</span>
           </summary>
           <div class="body">
+            <!-- IMAGE: Quality dashboard -->
+            <figure class="figure">
+              <img src="assets/img/g4.png" width="1536" height="1024"
+                   alt="A glowing golden terminal showing test results: green checkmarks flowing down, a circular progress gauge reading 96 percent in warm amber, and neat test file cards below."
+                   loading="lazy" />
+              <figcaption>What "solved" looks like: ask for tests in plain English, get 48 tests at 96% coverage, quality-gated and ready to commit.</figcaption>
+            </figure>
             <!-- VISUAL: Terminal-style output -->
             <figure class="figure diagram">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" style="width:100%;height:auto;font-family:'IBM Plex Mono',monospace;">
@@ -940,6 +977,13 @@ cd agentic-qe && npm install && npm run build && npm test -- --run</code></pre>
             <span class="chev" aria-hidden="true">&rsaquo;</span>
           </summary>
           <div class="body">
+            <!-- IMAGE: One download, two halves -->
+            <figure class="figure">
+              <img src="assets/img/g5.png" width="1536" height="1024"
+                   alt="One download splitting into two halves: For You (a person reading a primer and watching a video) and For Your AI (a glowing brain with a magnifying glass searching it)."
+                   loading="lazy" />
+              <figcaption>Everything is public: source on GitHub, package on npm, releases freely downloadable. No login, no paywall, no lock-in.</figcaption>
+            </figure>
             <p>
               Everything about Agentic QE is publicly available. No Vercel login,
               no gated downloads, no auth walls. Every link below goes to a
