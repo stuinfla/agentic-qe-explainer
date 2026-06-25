@@ -71,7 +71,7 @@
             <strong>11 coding agent platforms</strong>.
           </p>
           <div class="meta-row" aria-hidden="true">
-            <span>CLI&nbsp;<b>npm i -g agentic-qe</b></span>
+            <span>Install&nbsp;<b>npm i -g agentic-qe</b></span>
             <span>NPM&nbsp;<b>agentic-qe</b></span>
             <span>VERSION&nbsp;<b>v3.11.1</b></span>
             <span>LICENSE&nbsp;<b>MIT</b></span>
@@ -441,7 +441,7 @@
             <p>
               Coding agents like Claude Code, Cursor, and Copilot accelerate
               development. Code output has increased 10x for many teams. But
-              quality engineering hasn&rsquo;t kept pace. The MCP standard now
+              quality engineering hasn&rsquo;t kept pace. The Model Context Protocol (MCP) standard now
               lets AI tools share context, and free local models make routine
               test generation cost $0.
             </p>
@@ -538,19 +538,19 @@
                 <tr><th>Domain</th><th>Agents</th><th>What they do</th></tr>
               </thead>
               <tbody>
-                <tr><td>Test Generation</td><td>4</td><td>Generate tests, TDD workflows, mutation testing, property testing</td></tr>
+                <tr><td>Test Generation</td><td>4</td><td>Generate tests, test-driven development (TDD) workflows, mutation testing, property testing</td></tr>
                 <tr><td>Test Execution</td><td>3</td><td>Run tests in parallel, handle retries, integration testing</td></tr>
                 <tr><td>Coverage Analysis</td><td>2</td><td>Find untested code, prioritize by risk</td></tr>
                 <tr><td>Quality Assessment</td><td>4</td><td>Go/no-go gates, risk scoring, adversarial review</td></tr>
                 <tr><td>Defect Intelligence</td><td>4</td><td>Predict bugs, find root causes, fix flaky tests</td></tr>
-                <tr><td>Requirements</td><td>2</td><td>Validate testability, generate BDD scenarios</td></tr>
+                <tr><td>Requirements</td><td>2</td><td>Validate testability, generate behavior-driven scenarios</td></tr>
                 <tr><td>Code Intelligence</td><td>4</td><td>Knowledge graphs, semantic search, change impact</td></tr>
-                <tr><td>Security</td><td>3</td><td>SAST/DAST, compliance audits, exploit validation</td></tr>
+                <tr><td>Security</td><td>3</td><td>Static &amp; dynamic security analysis, compliance audits, exploit validation</td></tr>
                 <tr><td>Contracts</td><td>2</td><td>API contracts, GraphQL schema testing</td></tr>
-                <tr><td>Visual &amp; A11y</td><td>3</td><td>Visual regression, WCAG compliance, viewport testing</td></tr>
+                <tr><td>Visual &amp; Accessibility</td><td>3</td><td>Visual regression, accessibility compliance, viewport testing</td></tr>
                 <tr><td>Chaos &amp; Performance</td><td>3</td><td>Fault injection, load testing, performance validation</td></tr>
                 <tr><td>Learning</td><td>4</td><td>Cross-project learning, pattern discovery, metrics</td></tr>
-                <tr><td>Enterprise</td><td>7</td><td>SAP, SOAP, ESB, OData, JMS/AMQP/Kafka</td></tr>
+                <tr><td>Enterprise</td><td>7</td><td>SAP systems, legacy web services, message queues (Kafka, RabbitMQ), enterprise integrations</td></tr>
               </tbody>
             </table>
 
@@ -724,7 +724,7 @@
             <span class="num">06</span>
             <span class="head-text">
               <h2>Platform support</h2>
-              <span class="q">One MCP server, 11 coding agent platforms.</span>
+              <span class="q">One server, 11 coding agent platforms.</span>
             </span>
             <span class="chev" aria-hidden="true">&rsaquo;</span>
           </summary>
@@ -870,10 +870,10 @@ aqe platform verify cursor  # validate config</code></pre>
               <pre class="code-block"><code># Install globally from npm (public, free)
 npm install -g agentic-qe
 
-# Initialize your project (auto-detects tech stack, configures MCP)
+# Initialize your project (auto-detects your tech stack and connects to your coding agent)
 cd your-project && aqe init --auto
 
-# That's it — MCP tools are available immediately in Claude Code</code></pre>
+# That's it — 60 QE agents are available immediately in Claude Code</code></pre>
               <p style="margin-top:12px;">
                 <strong>All packages are public on npm:</strong>
                 <a href="https://www.npmjs.com/package/agentic-qe" target="_blank" rel="noopener">npmjs.com/package/agentic-qe</a>
@@ -913,7 +913,7 @@ cd agentic-qe && npm install && npm run build && npm test -- --run</code></pre>
                 <h3>Generate a full test suite</h3>
                 <p>
                   <code>qe-test-architect</code> generates unit, integration,
-                  property-based, and BDD tests across 15+ frameworks.
+                  property-based, and behavior-driven tests across 15+ frameworks.
                 </p>
                 <pre class="code-block"><code>"Create tests for PaymentService with 95% coverage"</code></pre>
               </div>
@@ -939,8 +939,8 @@ cd agentic-qe && npm install && npm run build && npm test -- --run</code></pre>
                 <span class="tag">Security</span>
                 <h3>Security audit</h3>
                 <p>
-                  <code>qe-security-scanner</code>: SAST/DAST, dependency
-                  scanning, API security, and chaos testing.
+                  <code>qe-security-scanner</code>: static and dynamic security
+                  analysis, dependency scanning, API security, and chaos testing.
                 </p>
                 <pre class="code-block"><code>"Run security scan on the auth module"</code></pre>
               </div>
@@ -1029,7 +1029,7 @@ cd agentic-qe && npm install && npm run build && npm test -- --run</code></pre>
               </a>
             </div>
 
-            <h3 style="margin-top: 28px;">CLI Reference</h3>
+            <h3 style="margin-top: 28px;">Command-Line Reference</h3>
             <pre class="code-block"><code>aqe init [--auto]              # Initialize project
 aqe agent list                 # List available agents
 aqe fleet status               # Fleet health
